@@ -1,5 +1,4 @@
-class Actor < Neo4j::Model
-  rule(:all)
+class Actor < Neo4j::Rails::Model
 
   property :name
   property :born
@@ -22,4 +21,6 @@ class Actor < Neo4j::Model
   #
   # Here we specify that the relationship will be an instance of the Role class.
   has_n(:roles).to(Movie).relationship(Role)
+  
+  rule(:was_born) { |n| !n.born.nil? }
 end

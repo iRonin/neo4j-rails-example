@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.2.3'
 
-gem 'neo4j', '1.3.1'
-gem 'neo4j-admin'
+gem 'neo4j', :git => 'https://github.com/andreasronge/neo4j.git'
+# gem 'neo4j-admin'
 
 # Use unicorn as the web server
 # gem 'unicorn'

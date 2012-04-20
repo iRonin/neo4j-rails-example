@@ -8,7 +8,7 @@ require "active_resource/railtie"
 require "rails/test_unit/railtie"
 
 # for the neo4j-admin gem
-require "neo4j-admin/railtie"
+# require "neo4j-admin/railtie"
 
 
 # Auto-require default libraries and those for the current Rails environment. 
